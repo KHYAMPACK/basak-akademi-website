@@ -24,7 +24,8 @@ export function ContactSection({
         Bize ulaşın
       </Title>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Bize ulaşmak için WhatsApp'tan yazabilir veya telefon numaramızı arayabilirsiniz.
+        Bize ulaşmak için WhatsApp&apos;tan yazabilir veya telefon numaramızı
+        arayabilirsiniz.
       </p>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-2">
