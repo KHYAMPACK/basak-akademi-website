@@ -37,7 +37,7 @@ export function ContactForm() {
           autoComplete="name"
         />
       </div>
-      <div>
+      <div className="hidden sm:block">
         <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-ink">
           Telefon
         </label>
@@ -47,7 +47,6 @@ export function ContactForm() {
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          required
           className="w-full rounded-md border border-line bg-white px-3 py-2.5 text-ink outline-none ring-brand/30 focus:ring-2"
           placeholder="05xx xxx xx xx"
           autoComplete="tel"

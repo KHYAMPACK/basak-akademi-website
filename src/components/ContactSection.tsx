@@ -5,9 +5,14 @@ type Props = {
   /** Use h1 on /iletisim, h2 when embedded on the home page */
   titleAs?: "h1" | "h2";
   id?: string;
+  showEmail?: boolean;
 };
 
-export function ContactSection({ titleAs = "h1", id = "iletisim" }: Props) {
+export function ContactSection({
+  titleAs = "h1",
+  id = "iletisim",
+  showEmail = true,
+}: Props) {
   const Title = titleAs;
 
   return (
@@ -42,13 +47,16 @@ export function ContactSection({ titleAs = "h1", id = "iletisim" }: Props) {
 
           <div>
             <h3 className="font-serif text-2xl text-brand">Telefon & WhatsApp</h3>
-            <ul className="mt-3 space-y-2 text-muted">
+            <ul className="mt-3 space-y-3 text-muted">
               <li>
                 <a
                   href={`tel:${siteConfig.phoneTel}`}
-                  className="font-medium text-ink hover:text-brand"
+                  className="inline-flex items-center gap-2 rounded-md border border-brand/25 bg-brand/5 px-4 py-2.5 font-semibold text-brand transition hover:bg-brand hover:text-white"
                 >
-                  {siteConfig.phoneDisplay}
+                  <PhoneGlyph className="h-4 w-4 shrink-0" />
+                  <span>
+                    Ara: {siteConfig.phoneDisplay}
+                  </span>
                 </a>
               </li>
               <li>
@@ -56,26 +64,28 @@ export function ContactSection({ titleAs = "h1", id = "iletisim" }: Props) {
                   href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-semibold text-whatsapp hover:text-whatsapp-dark"
+                  className="inline-flex items-center gap-2 rounded-md border border-whatsapp/30 bg-whatsapp/5 px-4 py-2.5 font-semibold text-whatsapp transition hover:bg-whatsapp hover:text-white"
                 >
-                  <WhatsAppGlyph className="h-4 w-4" />
+                  <WhatsAppGlyph className="h-4 w-4 shrink-0" />
                   WhatsApp ile yazın
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-serif text-2xl text-brand">E-posta</h3>
-            <p className="mt-3 text-muted">
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="hover:text-brand"
-              >
-                {siteConfig.email}
-              </a>
-            </p>
-          </div>
+          {showEmail && (
+            <div>
+              <h3 className="font-serif text-2xl text-brand">E-posta</h3>
+              <p className="mt-3 text-muted">
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="hover:text-brand"
+                >
+                  {siteConfig.email}
+                </a>
+              </p>
+            </div>
+          )}
 
           <div className="overflow-hidden border border-line bg-white">
             <iframe
@@ -100,6 +110,19 @@ export function ContactSection({ titleAs = "h1", id = "iletisim" }: Props) {
         </div>
       </div>
     </section>
+  );
+}
+
+function PhoneGlyph({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.02l-2.2 2.19z" />
+    </svg>
   );
 }
 

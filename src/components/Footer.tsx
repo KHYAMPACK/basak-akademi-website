@@ -42,9 +42,9 @@ export function Footer() {
             <p>
               <a
                 href={`tel:${siteConfig.phoneTel}`}
-                className="hover:text-white"
+                className="text-white hover:text-white/80"
               >
-                Tel: {siteConfig.phoneDisplay}
+                Ara: {siteConfig.phoneDisplay}
               </a>
             </p>
             <p>

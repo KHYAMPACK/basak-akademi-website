@@ -17,27 +17,27 @@ export function CtaBanner({
           <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">{title}</h2>
           <p className="mt-3 max-w-xl text-white/90">{subtitle}</p>
         </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
+          <a
+            href={`tel:${siteConfig.phoneTel}`}
+            className="rounded-md border border-white/50 bg-white px-5 py-3 text-center text-sm font-semibold text-brand transition hover:bg-cream"
+          >
+            Ara: {siteConfig.phoneDisplay}
+          </a>
           <a
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-whatsapp px-5 py-3 text-sm font-semibold text-white transition hover:bg-whatsapp-dark"
+            className="rounded-md bg-whatsapp px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-whatsapp-dark"
           >
             WhatsApp ile yazın
           </a>
           <Link
             href="/iletisim"
-            className="rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            className="rounded-md border border-white/40 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10"
           >
             İletişim
           </Link>
-          <a
-            href={`tel:${siteConfig.phoneTel}`}
-            className="rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            {siteConfig.phoneDisplay}
-          </a>
         </div>
       </div>
     </section>

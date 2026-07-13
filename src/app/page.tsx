@@ -35,47 +35,52 @@ const highlights = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden wheat-pattern">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#fffdf9]/40 via-transparent to-brand/[0.04]" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
-          <div>
-            <p className="animate-fade-up font-serif text-4xl font-semibold tracking-wide text-brand sm:text-5xl lg:text-6xl">
+      <section className="relative">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:py-24">
+          <div className="order-2 animate-fade-up lg:order-1">
+            <p className="font-serif text-3xl font-semibold tracking-wide text-brand sm:text-5xl lg:text-6xl">
               Özel Başak Akademi
             </p>
-            <h1 className="animate-fade-up-delay mt-5 max-w-xl font-serif text-2xl leading-snug text-ink sm:text-3xl">
+            <h1 className="animate-fade-up-delay mt-4 max-w-xl font-serif text-xl leading-snug text-ink sm:mt-5 sm:text-3xl">
               Okuldan sonra ödevlerini yapabilecekleri güvenli bir ortam
             </h1>
-            <p className="animate-fade-up-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-muted">
+            <p className="animate-fade-up-delay-2 mt-4 max-w-xl text-base leading-relaxed text-muted sm:mt-5 sm:text-lg">
               Denizli Merkezefendi&apos;de çocuklarınız okul çıkışı ödevlerini
               tamamlayabilir, destek alabilir ve güvenli bir ortamda vakit
               geçirebilir.
             </p>
-            <div className="animate-fade-up-delay-2 mt-8 flex flex-wrap gap-3">
+            <div className="animate-fade-up-delay-2 mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap">
+              <a
+                href={`tel:${siteConfig.phoneTel}`}
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
+              >
+                Ara: {siteConfig.phoneDisplay}
+              </a>
               <a
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-whatsapp px-5 py-3 text-sm font-semibold text-white transition hover:bg-whatsapp-dark"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-whatsapp px-5 py-3 text-sm font-semibold text-white transition hover:bg-whatsapp-dark"
               >
                 WhatsApp ile bilgi al
               </a>
               <Link
                 href="/programlar"
-                className="rounded-md border border-bronze/40 bg-white/70 px-5 py-3 text-sm font-semibold text-ink transition hover:border-bronze hover:bg-white"
+                className="inline-flex items-center justify-center rounded-md border border-bronze/40 bg-white/70 px-5 py-3 text-sm font-semibold text-ink transition hover:border-bronze hover:bg-white"
               >
                 Programları incele
               </Link>
             </div>
           </div>
 
-          <div className="animate-soft-scale flex justify-center lg:justify-end">
+          <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
             <Image
               src="/logo.png"
               alt="Özel Başak Akademi — Denizli çocuk bakım evi logosu"
               width={420}
               height={520}
               priority
-              className="relative h-auto w-64 object-contain sm:w-80 lg:w-[22rem]"
+              className="relative h-auto w-36 object-contain sm:w-44 lg:w-[22rem]"
             />
           </div>
         </div>
@@ -98,7 +103,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-line bg-white/50">
+      <section className="border-y border-line bg-transparent">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <h2 className="font-serif text-3xl text-ink">
             Hizmet bölgemiz: Denizli Merkezefendi
@@ -120,7 +125,7 @@ export default function HomePage() {
       </section>
 
       <CtaBanner />
-      <ContactSection titleAs="h2" />
+      <ContactSection titleAs="h2" showEmail={false} />
     </>
   );
 }
