@@ -43,11 +43,12 @@ export default function HomePage() {
               Özel Başak Akademi
             </p>
             <h1 className="animate-fade-up-delay mt-5 max-w-xl font-serif text-2xl leading-snug text-ink sm:text-3xl">
-              Denizli&apos;de çocuk bakım evi ve ilkokul destek programı
+              Okuldan sonra ödevlerini yapabilecekleri güvenli bir ortam
             </h1>
             <p className="animate-fade-up-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-muted">
-              Merkezefendi&apos;de ilkokula giden çocuklarınız için güvenli bakım,
-              akademik destek ve zengin aktivite programı.
+              Denizli Merkezefendi&apos;de çocuklarınız okul çıkışı ödevlerini
+              tamamlayabilir, destek alabilir ve güvenli bir ortamda vakit
+              geçirebilir.
             </p>
             <div className="animate-fade-up-delay-2 mt-8 flex flex-wrap gap-3">
               <a
@@ -68,17 +69,14 @@ export default function HomePage() {
           </div>
 
           <div className="animate-soft-scale flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="absolute -inset-6 rounded-full bg-gradient-to-br from-bronze/20 to-brand/10 blur-2xl" />
-              <Image
-                src="/logo.png"
-                alt="Özel Başak Akademi — Denizli çocuk bakım evi logosu"
-                width={420}
-                height={420}
-                priority
-                className="relative h-auto w-64 object-contain sm:w-80 lg:w-[22rem]"
-              />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Özel Başak Akademi — Denizli çocuk bakım evi logosu"
+              width={420}
+              height={520}
+              priority
+              className="relative h-auto w-64 object-contain sm:w-80 lg:w-[22rem]"
+            />
           </div>
         </div>
       </section>

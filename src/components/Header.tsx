@@ -13,21 +13,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-[#fffdf9]/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
             src="/logo.png"
-            alt="Özel Başak Akademi logosu"
-            width={56}
-            height={56}
-            className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+            alt="Özel Başak Akademi Çocuk Kulübü logosu"
+            width={240}
+            height={298}
+            className="h-16 w-auto object-contain sm:h-[4.5rem]"
             priority
           />
-          <span className="font-serif text-lg leading-tight tracking-wide text-brand sm:text-xl">
-            ÖZEL BAŞAK
-            <span className="block text-sm tracking-[0.12em] text-bronze sm:text-base">
-              AKADEMİ
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Ana menü">
