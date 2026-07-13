@@ -21,6 +21,11 @@ export function localBusinessJsonLd() {
       postalCode: siteConfig.address.postalCode,
       addressCountry: "TR",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.lat,
+      longitude: siteConfig.geo.lng,
+    },
     areaServed: {
       "@type": "City",
       name: "Denizli",

@@ -14,12 +14,17 @@ export const siteConfig = {
     postalCode: "20040",
     district: "Merkezefendi",
     city: "Denizli",
-    full: "Gerzele Mahallesi 528 Sokak No:3/A 20040 Denizli Merkezefendi/Denizli",
+    full: "Gerzele, 528 Sk. No:3/A, 20040 Denizli Merkezefendi/Denizli, Türkiye",
+  },
+  /** Özel Başak Akademi Çocuk Kulübü — Google Business pin */
+  geo: {
+    lat: 37.7473714,
+    lng: 29.0606991,
   },
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=Gerzele%2C%20528%20Sk.%20No%3A3%2FA%2C%2020040%20Denizli%20Merkezefendi&t=&z=16&ie=UTF8&iwloc=&output=embed",
+    "https://www.google.com/maps?q=37.7473714,29.0606991&z=18&hl=tr&output=embed",
   mapLink:
-    "https://www.google.com/maps/search/?api=1&query=Gerzele%2C%20528%20Sk.%20No%3A3%2FA%2C%2020040%20Denizli%20Merkezefendi",
+    "https://www.google.com/maps/place/%C3%96zel+Ba%C5%9Fak+Akademi+%C3%87ocuk+Kul%C3%BCb%C3%BC/@37.7473714,29.0606991,18z/data=!4m6!3m5!1s0x14c73f37d6aa86eb:0x32044a8c12524958!8m2!3d37.7473714!4d29.0606991!16s%2Fg%2F11ht5__g9y?hl=tr",
   keywords: [
     "çocuk bakım evi denizli",
     "kreş denizli",
