@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --color-red: #c41e2a;
+  --color-red-dark: #9e1822;
+  --color-bronze: #b08d57;
+  --color-bronze-soft: #d4b896;
+  --color-cream: #faf7f2;
+  --color-ink: #1c1410;
+  --color-muted: #5c5248;
+  --color-line: #e8dfd2;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ebe57;
+}
+
+@theme inline {
+  --color-brand: var(--color-red);
+  --color-brand-dark: var(--color-red-dark);
+  --color-bronze: var(--color-bronze);
+  --color-bronze-soft: var(--color-bronze-soft);
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-red) 22%, white);
+}
+
+.page-shell {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(176, 141, 87, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(196, 30, 42, 0.06), transparent 50%),
+    linear-gradient(180deg, #fffdf9 0%, var(--color-cream) 40%, #f5efe6 100%);
+}
+
+.wheat-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 8c2 6 2 12 0 18-2-6-2-12 0-18zm0 22c2 6 2 12 0 18-2-6-2-12 0-18z' fill='%23b08d57' fill-opacity='0.07'/%3E%3C/svg%3E");
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.7s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.7s ease-out 0.3s both;
+}
+
+.animate-soft-scale {
+  animation: soft-scale 0.9s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2,
+  .animate-soft-scale {
+    animation: none;
+  }
+}
