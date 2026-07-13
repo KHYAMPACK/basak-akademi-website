@@ -24,8 +24,7 @@ export function ContactSection({
         Bize ulaşın
       </Title>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Denizli Merkezefendi&apos;deki çocuk bakım evimizi ziyaret edin veya
-        WhatsApp / telefon ile hemen iletişime geçin.
+        Bize ulaşmak için WhatsApp'tan yazabilir veya telefon numaramızı arayabilirsiniz.
       </p>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-2">

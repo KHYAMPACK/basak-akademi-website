@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 
 const highlights = [
   {
-    title: "Akademik destek",
+    title: "Akademik Destek",
     text: "Birebir özel ders, ödev takibi, test çözümü ve sınavlara hazırlık.",
   },
   {
-    title: "Gelişim aktiviteleri",
+    title: "Gelişim Aktiviteleri",
     text: "Resim, müzik, zeka oyunları, spor ve dil dersleriyle dengeli gelişim.",
   },
   {
-    title: "Güvenli ortam",
+    title: "Güvenli Ortam",
     text: "İlkokul öğrencilerinizi güvenle emanet edebileceğiniz Merkezefendi lokasyonu.",
   },
 ];
@@ -41,12 +41,20 @@ export default function HomePage() {
             <p className="font-serif text-3xl font-semibold tracking-wide text-brand sm:text-5xl lg:text-6xl">
               Özel Başak Akademi
             </p>
-            <h1 className="animate-fade-up-delay mt-4 max-w-xl font-serif text-xl leading-snug text-ink sm:mt-5 sm:text-3xl">
-              Okuldan sonra ödevlerini yapabilecekleri güvenli bir ortam
+            <h1 className="animate-fade-up-delay mt-4 max-w-xl font-headline text-xl leading-snug text-ink sm:mt-5 sm:text-3xl">
+              Biz çocuklarınızla okul çıkışında{" "}
+              <span className="font-semibold italic text-brand">
+                ödevlerini, test çözümlerini ve etkinliklerini
+              </span>
+              {" "}yapalım, sizlere de evde onlarla{" "}
+              <span className="font-semibold italic text-brand">
+                 iyi vakit geçirmek
+              </span>{" "}
+              kalsın.
             </h1>
             <p className="animate-fade-up-delay-2 mt-4 max-w-xl text-base leading-relaxed text-muted sm:mt-5 sm:text-lg">
               Denizli Merkezefendi&apos;de çocuklarınız okul çıkışı ödevlerini
-              tamamlayabilir, destek alabilir ve güvenli bir ortamda vakit
+              tamamlayabilir, akademik destek alabilir ve güvenli bir ortamda vakit
               geçirebilir.
             </p>
             <div className="animate-fade-up-delay-2 mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap">
@@ -75,7 +83,7 @@ export default function HomePage() {
 
           <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
             <Image
-              src="/logo.png"
+              src="/logo2.png"
               alt="Özel Başak Akademi — Denizli çocuk bakım evi logosu"
               width={420}
               height={520}
@@ -106,12 +114,10 @@ export default function HomePage() {
       <section className="border-y border-line bg-transparent">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <h2 className="font-serif text-3xl text-ink">
-            Hizmet bölgemiz: Denizli Merkezefendi
+            Hizmet Bölgemiz: Denizli/Merkezefendi
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted">
-            Özel Başak Akademi, {siteConfig.address.full} adresinde hizmet
-            vermektedir. Denizli&apos;de çocuk bakım evi, kreş ve ilkokul etüt
-            desteği arayan aileler için ulaşılabilir bir konumdayız.
+            {siteConfig.address.full} 
           </p>
           <div className="mt-6 flex flex-wrap gap-4 text-sm">
             <Link href="/hakkimizda" className="font-semibold text-brand hover:underline">

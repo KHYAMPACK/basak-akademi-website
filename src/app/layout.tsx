@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Cormorant_Garamond, Fraunces, Source_Sans_3 } from "next/font/google";
+import { FloatingActions } from "@/components/FloatingActions";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { localBusinessJsonLd, pageMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -11,6 +11,13 @@ const display = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
   variable: "--font-display",
+  display: "swap",
+});
+
+const headline = Fraunces({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -40,7 +47,7 @@ export const metadata: Metadata = {
     description: pageMeta.home.description,
     images: [
       {
-        url: "/logo.png",
+        url: "/logo2.png",
         width: 512,
         height: 512,
         alt: "Özel Başak Akademi logosu",
@@ -51,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: pageMeta.home.title,
     description: pageMeta.home.description,
-    images: ["/logo.png"],
+    images: ["/logo2.png"],
   },
   robots: {
     index: true,
@@ -71,7 +78,7 @@ export default function RootLayout({
 
   return (
     <html lang="tr">
-      <body className={`${display.variable} ${body.variable} antialiased`}>
+      <body className={`${display.variable} ${headline.variable} ${body.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -80,7 +87,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
-          <WhatsAppFloat />
+          <FloatingActions />
         </div>
       </body>
     </html>

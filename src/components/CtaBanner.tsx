@@ -8,7 +8,7 @@ type Props = {
 
 export function CtaBanner({
   title = "Çocuğunuz için güvenli bir başlangıç",
-  subtitle = "Denizli Merkezefendi'deki çocuk bakım evimizi ziyaret edin veya WhatsApp'tan yazın.",
+  subtitle = "Bize ulaşmak için WhatsApp'tan yazabilir veya telefon numaramızı arayabilirsiniz.",
 }: Props) {
   return (
     <section className="border-y border-line bg-gradient-to-r from-brand to-brand-dark text-white">

@@ -11,8 +11,8 @@ export function localBusinessJsonLd() {
     url: siteConfig.url,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
-    image: `${siteConfig.url}/logo.png`,
-    logo: `${siteConfig.url}/logo.png`,
+    image: `${siteConfig.url}/logo2.png`,
+    logo: `${siteConfig.url}/logo2.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.street,

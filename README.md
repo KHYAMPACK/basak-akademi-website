@@ -9,6 +9,46 @@ npm install
 npm run dev
 ```
 
+## Galeriye fotoğraf / video ekleme
+
+1. Dosyayı `public/galeri/` klasörüne koyun  
+   - Fotoğraf: `.jpg` / `.png` / `.webp`  
+   - Video: `.mp4` (önerilen)
+2. `src/lib/gallery.ts` dosyasındaki `galleryItems` listesine bir satır ekleyin:
+
+**Fotoğraf**
+```ts
+{
+  type: "image",
+  src: "/galeri/sinif.jpg",
+  alt: "Sınıf ortamı",
+  caption: "Çalışma alanımız",
+},
+```
+
+**Yerel video**
+```ts
+{
+  type: "video",
+  src: "/galeri/etkinlik.mp4",
+  poster: "/galeri/etkinlik.jpg", // isteğe bağlı önizleme
+  caption: "Etkinlik videosu",
+},
+```
+
+**YouTube**
+```ts
+{
+  type: "youtube",
+  src: "https://www.youtube.com/watch?v=VIDEO_ID",
+  caption: "Tanıtım videosu",
+},
+```
+
+3. Sayfayı yenileyin — `/galeri` üzerinde görünür.
+
+> Not: Büyük videolar siteyi yavaşlatabilir. Mümkünse YouTube’a yükleyip `type: "youtube"` kullanın, veya mp4’ü sıkıştırın.
+
 ## Deploy (Vercel)
 
 1. Repo'yu GitHub'a push edin

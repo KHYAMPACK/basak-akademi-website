@@ -15,7 +15,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
-            src="/logo.png"
+            src="/logo2.png"
             alt="Özel Başak Akademi Çocuk Kulübü logosu"
             width={240}
             height={298}

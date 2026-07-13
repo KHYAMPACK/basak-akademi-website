@@ -10,8 +10,7 @@ export function Footer() {
             Özel Başak Akademi
           </p>
           <p className="mt-3 text-sm leading-relaxed text-[#d4b896]">
-            Denizli Merkezefendi&apos;de çocuk bakım evi ve ilkokul destek
-            programı.
+          Denizli Merkezefendi&apos;de; çocuklarınız okul çıkışı ödevlerini tamamlayabilir, akademik destek alabilir ve güvenli bir ortamda vakit geçirebilir.
           </p>
         </div>
 

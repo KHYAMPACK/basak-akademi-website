@@ -14,7 +14,7 @@ export const siteConfig = {
     postalCode: "20040",
     district: "Merkezefendi",
     city: "Denizli",
-    full: "Gerzele, 528 Sk. No:3/A, 20040 Denizli Merkezefendi/Denizli",
+    full: "Gerzele Mahallesi 528 Sokak No:3/A 20040 Denizli Merkezefendi/Denizli",
   },
   mapEmbedUrl:
     "https://maps.google.com/maps?q=Gerzele%2C%20528%20Sk.%20No%3A3%2FA%2C%2020040%20Denizli%20Merkezefendi&t=&z=16&ie=UTF8&iwloc=&output=embed",

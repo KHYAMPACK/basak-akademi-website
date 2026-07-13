@@ -32,8 +32,8 @@ export default function HakkimizdaPage() {
           <article className="border-l-2 border-brand pl-6">
             <h2 className="font-serif text-2xl text-ink">Misyonumuz</h2>
             <p className="mt-3 leading-relaxed text-muted">
-              İlkokul öğrencilerine güvenli bir bakım ortamı sunarken akademik
-              başarıyı ve kişisel gelişimi dengeli biçimde desteklemek.
+              İlkokul öğrencilerinin akademik
+              başarısını ve kişisel gelişimini dengeli biçimde desteklemek.
             </p>
           </article>
           <article className="border-l-2 border-bronze pl-6">
@@ -51,9 +51,9 @@ export default function HakkimizdaPage() {
             Denizli&apos;de güvenilir bir adres
           </h2>
           <p className="mt-4 leading-relaxed text-muted">
-            Merkezefendi Gerzele Mahallesi&apos;ndeki kurumumuz; çocuk bakım evi,
-            etüt ve gelişim aktivitelerini aynı çatı altında toplar. Ailelere
-            şeffaf iletişim ve düzenli geri bildirim sunmayı önemseriz.
+            Merkezefendi Gerzele Mahallesi&apos;ndeki kurumumuz;
+            etüt ve gelişim aktivitelerini aynı çatı altında toplar, ailelere
+            şeffaf iletişim ve düzenli geri bildirim sunmayı önemser.
           </p>
         </div>
       </section>

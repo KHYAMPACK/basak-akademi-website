@@ -15,27 +15,27 @@ export const metadata: Metadata = {
 
 const programs = [
   {
-    title: "Birebir özel ders",
-    text: "Öğrencinin seviyesine göre planlanan birebir derslerle konu pekiştirme ve eksik kapatma.",
+    title: "Birebir Özel Ders",
+    text: "Öğrencinin seviyesine göre planlanan birebir derslerle konu pekiştirme.",
   },
   {
-    title: "Ödev takibi",
+    title: "Ödev Takibi",
     text: "Günlük ödevlerin düzenli kontrolü ve okul temposuna uyumlu çalışma alışkanlığı.",
   },
   {
-    title: "Test ve sınav hazırlığı",
+    title: "Test ve Sınav Hazırlığı",
     text: "Test çözümü, deneme pratikleri ve sınavlara yönelik sistematik hazırlık desteği.",
   },
   {
-    title: "Resim ve müzik",
+    title: "Resim ve Müzik",
     text: "Yaratıcılığı destekleyen resim çalışmaları ve müzik etkinlikleri.",
   },
   {
-    title: "Zeka oyunları",
+    title: "Zeka Oyunları",
     text: "Dikkat, mantık ve problem çözme becerilerini güçlendiren oyun temelli etkinlikler.",
   },
   {
-    title: "Spor ve dil dersleri",
+    title: "Spor ve Dil Dersleri",
     text: "Hareketli spor aktiviteleri ile dil gelişimini destekleyen dersler.",
   },
 ];
@@ -48,10 +48,10 @@ export default function ProgramlarPage() {
           Programlar
         </p>
         <h1 className="mt-3 font-serif text-4xl text-ink sm:text-5xl">
-          Akademik destek ve gelişim programları
+          Akademik Destek ve Gelişim Programları
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted">
-          Denizli çocuk bakım evimizde ilkokul öğrencileri için akademik destek
+          Denizli/Merkezefendi&apos;deki Özel Başak Akademi&apos;de ilkokul öğrencileri için akademik destek
           ile sanat, spor ve dil aktivitelerini bir arada sunuyoruz.
         </p>
 
@@ -73,12 +73,12 @@ export default function ProgramlarPage() {
             İlkokula giden çocuklarınız için okul sonrası güvenli bakım, ödev
             desteği ve çok yönlü gelişim programı arıyorsanız Özel Başak Akademi
             sizin için uygundur. Detaylı program ve saat bilgisi için bizimle
-            iletişime geçin.
+            iletişime geçebilirsiniz.
           </p>
         </div>
       </section>
       <CtaBanner
-        title="Program hakkında bilgi alın"
+        title="Program Hakkında Bilgi Alın"
         subtitle="Çocuğunuzun sınıfına uygun çalışma planını birlikte oluşturalım."
       />
     </>
