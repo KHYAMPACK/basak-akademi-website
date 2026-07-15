@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navLinks, siteConfig, whatsappLink } from "@/lib/site";
 
@@ -10,7 +11,9 @@ export function Footer() {
             Özel Başak Akademi
           </p>
           <p className="mt-3 text-sm leading-relaxed text-[#d4b896]">
-          Denizli Merkezefendi&apos;de; çocuklarınız okul çıkışı ödevlerini tamamlayabilir, akademik destek alabilir ve güvenli bir ortamda vakit geçirebilir.
+            Denizli Merkezefendi&apos;de; çocuklarınız okul çıkışı ödevlerini
+            tamamlayabilir, akademik destek alabilir ve güvenli bir ortamda
+            vakit geçirebilir.
           </p>
         </div>
 
@@ -64,8 +67,30 @@ export function Footer() {
           </address>
         </div>
       </div>
-      <div className="border-t border-white/10 py-4 text-center text-xs text-[#d4b896]/80">
-        © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
+      <div className="border-t border-white/10 px-4 py-4 sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-[#d4b896]/80 sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
+          </p>
+          <a
+            href="https://ekizyazilim.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 transition hover:text-white"
+          >
+            <span>Powered by</span>
+            <Image
+              src="/ekiz-yazilim.png"
+              alt="ekiz YAZILIM"
+              width={22}
+              height={22}
+              className="h-5 w-5 object-contain"
+            />
+            <span className="tracking-wide text-[#f5efe6]/90">
+              ekiz <span className="font-semibold">YAZILIM</span>
+            </span>
+          </a>
+        </div>
       </div>
     </footer>
   );

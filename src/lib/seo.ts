@@ -31,6 +31,23 @@ export function localBusinessJsonLd() {
       name: "Denizli",
     },
     sameAs: [],
+    potentialAction: [
+      {
+        "@type": "CommunicateAction",
+        name: "Ara",
+        target: `tel:${siteConfig.phoneTel}`,
+      },
+      {
+        "@type": "CommunicateAction",
+        name: "WhatsApp",
+        target: `https://wa.me/${siteConfig.whatsapp}`,
+      },
+      {
+        "@type": "FindAction",
+        name: "Yol tarifi",
+        target: siteConfig.mapLink,
+      },
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -50,19 +67,19 @@ export function localBusinessJsonLd() {
 
 export const pageMeta = {
   home: {
-    title: "Özel Başak Akademi | Çocuk Bakım Evi Denizli",
+    title: "Özel Başak Akademi | Etüt Merkezi Denizli",
     description:
-      "Denizli Merkezefendi'de çocuk bakım evi. İlkokul öğrencilerine özel ders, ödev takibi, sınav hazırlığı, resim, müzik, spor ve dil dersleri. Özel Başak Akademi.",
+      "Denizli Merkezefendi'de etüt merkezi. İlkokul öğrencilerine özel ders, ödev takibi, sınav hazırlığı, resim, müzik, spor ve dil dersleri. Özel Başak Akademi.",
   },
   hakkimizda: {
     title: "Hakkımızda | Özel Başak Akademi Denizli",
     description:
-      "Özel Başak Akademi'yi tanıyın. Denizli'de çocuklarınıza akademik destek ve güvenli bakım sunan kurumumuz hakkında bilgi alın.",
+      "Özel Başak Akademi'yi tanıyın. Denizli'de çocuklarınıza akademik destek ve güvenli bakım sunan etüt merkezimiz hakkında bilgi alın.",
   },
   programlar: {
     title: "Programlar ve Yaş Grupları | Başak Akademi Denizli",
     description:
-      "Özel ders, ödev takibi, sınav hazırlığı, resim, müzik, zeka oyunları, spor ve dil dersleri. Denizli çocuk bakım evi programlarımız.",
+      "Özel ders, ödev takibi, sınav hazırlığı, resim, müzik, zeka oyunları, spor ve dil dersleri. Denizli etüt merkezi programlarımız.",
   },
   galeri: {
     title: "Galeri | Özel Başak Akademi Denizli",
@@ -70,7 +87,7 @@ export const pageMeta = {
       "Özel Başak Akademi'nin Denizli Merkezefendi'deki kurum ortamından kareler.",
   },
   iletisim: {
-    title: "İletişim | Çocuk Bakım Evi Denizli — Başak Akademi",
+    title: "İletişim | Etüt Merkezi Denizli — Başak Akademi",
     description:
       "Özel Başak Akademi iletişim: Gerzele, 528 Sk. No:3/A, Merkezefendi/Denizli. Telefon ve WhatsApp: 0533 330 00 07.",
   },

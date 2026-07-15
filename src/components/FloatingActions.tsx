@@ -4,6 +4,22 @@ export function FloatingActions() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3 sm:bottom-6 sm:right-6">
       <a
+        href={siteConfig.mapLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Yol tarifi al"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1a73e8] text-white shadow-lg shadow-black/20 transition hover:scale-105 hover:bg-[#1557b0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a73e8] sm:h-16 sm:w-16"
+      >
+        <svg
+          className="h-7 w-7"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+        </svg>
+      </a>
+      <a
         href={`tel:${siteConfig.phoneTel}`}
         aria-label={`Ara: ${siteConfig.phoneDisplay}`}
         className="flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white shadow-lg shadow-black/20 transition hover:scale-105 hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:h-16 sm:w-16"
