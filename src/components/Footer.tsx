@@ -76,19 +76,16 @@ export function Footer() {
             href="https://ekizyazilim.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 transition hover:text-white"
+            className="inline-flex items-center gap-3 transition opacity-90 hover:opacity-100"
           >
-            <span>Powered by</span>
+            <span className="text-xs text-[#d4b896]/80">Powered by</span>
             <Image
               src="/ekiz-yazilim.png"
               alt="ekiz YAZILIM"
-              width={22}
-              height={22}
-              className="h-5 w-5 object-contain"
+              width={180}
+              height={46}
+              className="h-7 w-auto object-contain sm:h-8"
             />
-            <span className="tracking-wide text-[#f5efe6]/90">
-              ekiz <span className="font-semibold">YAZILIM</span>
-            </span>
           </a>
         </div>
       </div>
