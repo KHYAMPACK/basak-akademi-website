@@ -70,7 +70,7 @@ export default function ProgramlarPage() {
         <div className="mt-16 max-w-3xl">
           <h2 className="font-serif text-2xl text-ink">Kimler için?</h2>
           <p className="mt-3 leading-relaxed text-muted">
-            İlkokula giden çocuklarınız için okul sonrası güvenli bakım, ödev
+            İlkokula giden çocuklarınız için okul sonrası güvenli ortam, ödev
             desteği ve çok yönlü gelişim programı arıyorsanız Özel Başak Akademi
             sizin için uygundur. Detaylı program ve saat bilgisi için bizimle
             iletişime geçebilirsiniz.

@@ -3,7 +3,7 @@ import { siteConfig } from "./site";
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "ChildCare",
+    "@type": "EducationalOrganization",
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     alternateName: siteConfig.shortName,
@@ -74,7 +74,7 @@ export const pageMeta = {
   hakkimizda: {
     title: "Hakkımızda | Özel Başak Akademi Denizli",
     description:
-      "Özel Başak Akademi'yi tanıyın. Denizli'de çocuklarınıza akademik destek ve güvenli bakım sunan etüt merkezimiz hakkında bilgi alın.",
+      "Özel Başak Akademi'yi tanıyın. Denizli'de çocuklarınıza akademik destek sunan etüt merkezimiz hakkında bilgi alın.",
   },
   programlar: {
     title: "Programlar ve Yaş Grupları | Başak Akademi Denizli",

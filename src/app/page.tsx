@@ -84,7 +84,7 @@ export default function HomePage() {
           <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
             <Image
               src="/logo2.png"
-              alt="Özel Başak Akademi — Denizli çocuk bakım evi logosu"
+              alt="Özel Başak Akademi — Denizli etüt merkezi logosu"
               width={420}
               height={520}
               priority

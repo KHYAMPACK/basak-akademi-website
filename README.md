@@ -1,6 +1,6 @@
 # Özel Başak Akademi
 
-Denizli Merkezefendi'de çocuk bakım evi ve ilkokul destek programı.
+Denizli Merkezefendi'de etüt merkezi ve ilkokul destek programı.
 
 ## Geliştirme
 
