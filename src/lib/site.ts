@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Özel Başak Akademi",
   shortName: "Başak Akademi",
   domain: "basakakademi20.com",
-  url: "https://basakakademi20.com",
+  url: "https://www.basakakademi20.com",
   description:
     "Gerzele'de yarı zamanlı etüt merkezi. Denizli Merkezefendi Gerzele Mahallesi'nde ilkokul öğrencilerine ödev takibi, özel ders, sınav hazırlığı ve gelişim aktiviteleri.",
   phoneDisplay: "0533 330 00 07",
