@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: "/logo2.png",
         width: 512,
         height: 512,
-        alt: "Özel Başak Akademi logosu",
+        alt: "Özel Başak Akademi — Gerzele etüt merkezi logosu",
       },
     ],
   },
@@ -73,6 +73,12 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
+  },
+  other: {
+    "geo.region": "TR-20",
+    "geo.placename": "Gerzele, Merkezefendi, Denizli",
+    "geo.position": `${siteConfig.geo.lat};${siteConfig.geo.lng}`,
+    ICBM: `${siteConfig.geo.lat}, ${siteConfig.geo.lng}`,
   },
 };
 

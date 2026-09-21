@@ -4,12 +4,14 @@ import { siteConfig, whatsappLink } from "@/lib/site";
 type Props = {
   /** Use h1 on /iletisim, h2 when embedded on the home page */
   titleAs?: "h1" | "h2";
+  title?: string;
   id?: string;
   showEmail?: boolean;
 };
 
 export function ContactSection({
   titleAs = "h1",
+  title = "Bize ulaşın",
   id = "iletisim",
   showEmail = true,
 }: Props) {
@@ -21,11 +23,11 @@ export function ContactSection({
         İletişim
       </p>
       <Title className="mt-3 font-serif text-4xl text-ink sm:text-5xl">
-        Bize ulaşın
+        {title}
       </Title>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Bize ulaşmak için WhatsApp&apos;tan yazabilir veya telefon numaramızı
-        arayabilirsiniz.
+        Gerzele Mahallesi&apos;ndeki yarı zamanlı etüt merkezimize
+        WhatsApp&apos;tan yazabilir veya telefon numaramızı arayabilirsiniz.
       </p>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -89,7 +91,7 @@ export function ContactSection({
 
           <div className="overflow-hidden border border-line bg-white">
             <iframe
-              title="Özel Başak Akademi konum haritası"
+              title="Özel Başak Akademi Gerzele etüt merkezi konum haritası"
               src={siteConfig.mapEmbedUrl}
               className="h-64 w-full border-0 sm:h-80"
               loading="lazy"

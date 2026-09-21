@@ -48,11 +48,12 @@ export default function ProgramlarPage() {
           Programlar
         </p>
         <h1 className="mt-3 font-serif text-4xl text-ink sm:text-5xl">
-          Akademik Destek ve Gelişim Programları
+          Gerzele yarı zamanlı etüt programları
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted">
-          Denizli/Merkezefendi&apos;deki Özel Başak Akademi&apos;de ilkokul öğrencileri için akademik destek
-          ile sanat, spor ve dil aktivitelerini bir arada sunuyoruz.
+          Gerzele Mahallesi&apos;ndeki Özel Başak Akademi&apos;de ilkokul
+          öğrencileri için okul sonrası etüt, akademik destek ve sanat, spor,
+          dil aktivitelerini bir arada sunuyoruz.
         </p>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,10 +71,10 @@ export default function ProgramlarPage() {
         <div className="mt-16 max-w-3xl">
           <h2 className="font-serif text-2xl text-ink">Kimler için?</h2>
           <p className="mt-3 leading-relaxed text-muted">
-            İlkokula giden çocuklarınız için okul sonrası güvenli ortam, ödev
-            desteği ve çok yönlü gelişim programı arıyorsanız Özel Başak Akademi
-            sizin için uygundur. Detaylı program ve saat bilgisi için bizimle
-            iletişime geçebilirsiniz.
+            Gerzele&apos;de yarı zamanlı etüt merkezi arıyorsanız; ilkokula
+            giden çocuklarınız için okul sonrası güvenli ortam, ödev desteği ve
+            çok yönlü gelişim programı sunuyoruz. Detaylı program ve saat
+            bilgisi için bizimle iletişime geçebilirsiniz.
           </p>
         </div>
       </section>

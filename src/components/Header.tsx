@@ -16,7 +16,7 @@ export function Header() {
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
             src="/logo2.png"
-            alt="Özel Başak Akademi Çocuk Kulübü logosu"
+            alt="Özel Başak Akademi — Gerzele etüt merkezi logosu"
             width={240}
             height={298}
             className="h-16 w-auto object-contain sm:h-[4.5rem]"

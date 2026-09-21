@@ -24,6 +24,9 @@ export default function HakkimizdaPage() {
         <h1 className="mt-3 font-serif text-4xl text-ink sm:text-5xl">
           Özel Başak Akademi
         </h1>
+        <p className="mt-3 font-serif text-2xl text-brand">
+          Gerzele&apos;de yarı zamanlı etüt merkezi
+        </p>
         <p className="mt-6 max-w-3xl text-xl leading-relaxed text-muted">
           {aboutText}
         </p>
@@ -48,12 +51,13 @@ export default function HakkimizdaPage() {
 
         <div className="mt-16 max-w-3xl rounded-lg border border-line bg-white/70 p-8">
           <h2 className="font-serif text-2xl text-brand">
-            Denizli&apos;de güvenilir bir adres
+            Gerzele Mahallesi&apos;nde güvenilir bir adres
           </h2>
           <p className="mt-4 leading-relaxed text-muted">
-            Merkezefendi Gerzele Mahallesi&apos;ndeki kurumumuz;
-            etüt ve gelişim aktivitelerini aynı çatı altında toplar, ailelere
-            şeffaf iletişim ve düzenli geri bildirim sunmayı önemser.
+            Denizli Merkezefendi Gerzele Mahallesi&apos;ndeki yarı zamanlı etüt
+            merkezimiz; ödev takibi, özel ders ve gelişim aktivitelerini aynı
+            çatı altında toplar. Ailelere şeffaf iletişim ve düzenli geri
+            bildirim sunmayı önemseriz.
           </p>
         </div>
       </section>

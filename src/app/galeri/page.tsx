@@ -22,7 +22,7 @@ export default function GaleriPage() {
           Galeri
         </p>
         <h1 className="mt-3 font-serif text-4xl text-ink sm:text-5xl">
-          Kurumumuzdan Kareler
+          Gerzele etüt merkezimizden kareler
         </h1>
      
 

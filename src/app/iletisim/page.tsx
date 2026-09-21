@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function IletisimPage() {
-  return <ContactSection titleAs="h1" />;
+  return <ContactSection titleAs="h1" title="Gerzele etüt merkezi iletişim" />;
 }
